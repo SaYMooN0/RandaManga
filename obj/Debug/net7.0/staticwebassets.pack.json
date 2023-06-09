@@ -21,6 +21,18 @@
       "PackagePath": "staticwebassets\\images\\icn.png"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\icons\\catalog.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\catalog.svg"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\icons\\liked.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\liked.svg"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\icons\\profile.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\profile.svg"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\favicon.ico",
       "PackagePath": "staticwebassets\\js\\favicon.ico"
     },
