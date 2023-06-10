@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\icn.png"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\Default.png",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\Default.png"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\favicon.ico",
       "PackagePath": "staticwebassets\\js\\favicon.ico"
     },
