@@ -9,6 +9,12 @@ builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServe
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();

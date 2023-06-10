@@ -7,4 +7,12 @@
 <h1>3</h1>
 <h1>4</h1>
 <h1>Catalog</h1>
-<h1></h1> 
+@{ int a = 0;}
+@foreach (RandaManga.Models.Manga item in Model.mangaList)
+{
+  
+    <h1>@a</h1>
+    <h1>@item.ToString()</h1>
+    a++;
+}
+<h1>End</h1>
