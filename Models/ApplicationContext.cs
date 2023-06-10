@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 namespace RandaManga.Models
 {
-    class ApplicationContext:DbContext
+    public class ApplicationContext : DbContext
     {
-        public DbSet<Manga> Mangas { get; set; } = null!;
+        public DbSet<Manga> MangaCatalog { get; set; } = null!;
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
         {
             Database.EnsureCreated();
@@ -20,6 +20,5 @@ namespace RandaManga.Models
                 optionsBuilder.UseSqlServer(connectionString);
             }
         }
-
     }
 }
