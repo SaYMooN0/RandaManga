@@ -11,45 +11,53 @@
 </head>
 <body>
     <div class="headerDiv">
-        <img src="~/images/icn.png" alt="Logo" class="logo">
+        <a asp-page="Index" class="logoRef">
+            <img src="~/images/icn.png" alt="Logo" class="logo">
+        </a>
         <div class="barDiv">
             <p></p>
-            <div class="grid">
-                <div class="grid-item">
-                    <svg class="imgSvg" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#88495E" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
-                        <g class="svgLine" id="Combined-Shape" fill="#88495E" transform="translate(42.666667, 85.333333)"> <path d="M3.55271368e-14,298.666667 L426.666667,298.666667 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,298.666667 Z M42.6666667,1.42108547e-14 L106.666667,1.42108547e-14 L106.666667,277.333333 L42.6666667,277.333333 L42.6666667,1.42108547e-14 Z M128,21.3333333 L192,21.3333333 L192,277.333333 L128,277.333333 L128,21.3333333 Z M288.933802,36.9522088 L351.961498,25.8387255 L399.909944,277.333333 L330.641827,277.70319 L288.933802,36.9522088 Z M213.333333,21.3333333 L277.333333,21.3333333 L277.333333,277.333333 L213.333333,277.333333 L213.333333,21.3333333 Z"> </path> </g> </g>
-                    </svg>
+            <a asp-page="Catalog" style="text-decoration: none;">
+                <div class="grid">
+                    <div class="grid-item">
+                        <svg class="imgSvg" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#88495E" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                            <g class="svgLine" id="Combined-Shape" fill="#88495E" transform="translate(42.666667, 85.333333)"> <path d="M3.55271368e-14,298.666667 L426.666667,298.666667 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,298.666667 Z M42.6666667,1.42108547e-14 L106.666667,1.42108547e-14 L106.666667,277.333333 L42.6666667,277.333333 L42.6666667,1.42108547e-14 Z M128,21.3333333 L192,21.3333333 L192,277.333333 L128,277.333333 L128,21.3333333 Z M288.933802,36.9522088 L351.961498,25.8387255 L399.909944,277.333333 L330.641827,277.70319 L288.933802,36.9522088 Z M213.333333,21.3333333 L277.333333,21.3333333 L277.333333,277.333333 L213.333333,277.333333 L213.333333,21.3333333 Z"> </path> </g>
+                        </svg>
+                    </div>
+                    <div class="grid-item">
+                        <label>Catalog</label>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <label>Catalog</label>
+            </a>
+            <a asp-page="Liked" style="text-decoration: none;">
+                <div class="grid">
+                    <div class="grid-item">
+                        <svg class="imgSvg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                            <g id="SVGRepo_iconCarrier">
+                                <path class="svgLine" d="M19.3 5.71002C18.841 5.24601 18.2943 4.87797 17.6917 4.62731C17.0891 4.37666 16.4426 4.2484 15.79 4.25002C15.1373 4.2484 14.4909 4.37666 13.8883 4.62731C13.2857 4.87797 12.739 5.24601 12.28 5.71002L12 6.00002L11.72 5.72001C10.7917 4.79182 9.53273 4.27037 8.22 4.27037C6.90726 4.27037 5.64829 4.79182 4.72 5.72001C3.80386 6.65466 3.29071 7.91125 3.29071 9.22002C3.29071 10.5288 3.80386 11.7854 4.72 12.72L11.49 19.51C11.6306 19.6505 11.8212 19.7294 12.02 19.7294C12.2187 19.7294 12.4094 19.6505 12.55 19.51L19.32 12.72C20.2365 11.7823 20.7479 10.5221 20.7442 9.21092C20.7405 7.89973 20.2218 6.64248 19.3 5.71002Z" fill="#88495E" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="grid-item">
+                        <label>Liked</label>
+                    </div>
                 </div>
-            </div>
-            <div class="grid">
-                <div class="grid-item">
-                    <svg class="imgSvg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </a>
+            <a asp-page="Profile" style="text-decoration: none;">
+                <div class="grid">
+                    <div class="grid-item">
+                        <svg class="imgSvgSmaller" fill="#88495E" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                        <g id="SVGRepo_iconCarrier">
-                            <path class="svgLine" d="M19.3 5.71002C18.841 5.24601 18.2943 4.87797 17.6917 4.62731C17.0891 4.37666 16.4426 4.2484 15.79 4.25002C15.1373 4.2484 14.4909 4.37666 13.8883 4.62731C13.2857 4.87797 12.739 5.24601 12.28 5.71002L12 6.00002L11.72 5.72001C10.7917 4.79182 9.53273 4.27037 8.22 4.27037C6.90726 4.27037 5.64829 4.79182 4.72 5.72001C3.80386 6.65466 3.29071 7.91125 3.29071 9.22002C3.29071 10.5288 3.80386 11.7854 4.72 12.72L11.49 19.51C11.6306 19.6505 11.8212 19.7294 12.02 19.7294C12.2187 19.7294 12.4094 19.6505 12.55 19.51L19.32 12.72C20.2365 11.7823 20.7479 10.5221 20.7442 9.21092C20.7405 7.89973 20.2218 6.64248 19.3 5.71002Z" fill="#88495E" />
-                        </g>
+                        <g id="SVGRepo_iconCarrier"> <path d="M50,43v2.2c0,2.6-2.2,4.8-4.8,4.8H6.8C4.2,50,2,47.8,2,45.2V43c0-5.8,6.8-9.4,13.2-12.2 c0.2-0.1,0.4-0.2,0.6-0.3c0.5-0.2,1-0.2,1.5,0.1c2.6,1.7,5.5,2.6,8.6,2.6s6.1-1,8.6-2.6c0.5-0.3,1-0.3,1.5-0.1 c0.2,0.1,0.4,0.2,0.6,0.3C43.2,33.6,50,37.1,50,43z M26,2c6.6,0,11.9,5.9,11.9,13.2S32.6,28.4,26,28.4s-11.9-5.9-11.9-13.2 S19.4,2,26,2z" /> </g>
                     </svg>
+                    </div>
+                    <div class="grid-item">
+                        <label>Profile</label>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <label>Liked</label>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="grid-item">
-                    <svg class="imgSvgSmaller" fill="#88495E" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                    <g id="SVGRepo_iconCarrier"> <path d="M50,43v2.2c0,2.6-2.2,4.8-4.8,4.8H6.8C4.2,50,2,47.8,2,45.2V43c0-5.8,6.8-9.4,13.2-12.2 c0.2-0.1,0.4-0.2,0.6-0.3c0.5-0.2,1-0.2,1.5,0.1c2.6,1.7,5.5,2.6,8.6,2.6s6.1-1,8.6-2.6c0.5-0.3,1-0.3,1.5-0.1 c0.2,0.1,0.4,0.2,0.6,0.3C43.2,33.6,50,37.1,50,43z M26,2c6.6,0,11.9,5.9,11.9,13.2S32.6,28.4,26,28.4s-11.9-5.9-11.9-13.2 S19.4,2,26,2z" /> </g>
-                    </svg>
-                </div>
-                <div class="grid-item">
-                    <label>Profile</label>
-                </div>
-            </div>
+            </a>
             <p></p>
         </div>
     </div>

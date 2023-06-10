@@ -2,12 +2,7 @@
     background: #C6BDB6;
 }
 
-.logo {
-    margin-left: 2%;
-    height: 76%;
-    aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
-    object-fit: contain; /* Обеспечиваем правильное отображение изображения */
-}
+
 
 .headerDiv {
     background: #88495E;
@@ -20,6 +15,20 @@
     display: flex;
     align-items: center; /* Центрируем элементы по вертикали */
     justify-content: space-between; /* Распределяет элементы равномерно по горизонтали */
+}
+.logoRef {
+    margin-left: 2%;
+    margin-top:1%;
+    height: 98%;
+    aspect-ratio: 1/1;
+    align-content: center;
+    justify-content: center;
+}
+.logo {
+    margin-left: 2%;
+    height: 76%;
+    aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
+    object-fit: contain; /* Обеспечиваем правильное отображение изображения */
 }
 
 .barDiv {
