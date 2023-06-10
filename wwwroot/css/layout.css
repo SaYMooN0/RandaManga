@@ -34,7 +34,7 @@
 .barDiv {
     background: #C6BDB6;
     display: grid;
-    grid-template-columns: 32% 14.5% 12% 13.5% 28%;
+    grid-template-columns: 33.25% 12.5% 12.5% 12.5% 29.25%;
     align-content: center;
     justify-content: center;
     height: 7vh;
