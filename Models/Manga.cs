@@ -14,7 +14,8 @@ namespace RandaManga.Models
         
         public MangaType Type { get; private set; } = MangaType.Unknown;
         public MangaStatus Status { get; private set; } = MangaStatus.Unknown;
-        public string Link { get; private set; } = "No_Link_Was_Found";
+        public string RusLink { get; private set; } = "No_rus link was found";
+        public string EngLink { get; private set; } = "No_eng link was found";
         public string ImagePath { get; private set; } = @"/images/mangaCovers/Default.png";
         public string AgeLimit { get; private set; } = "Default_Age_Limit";
         public int ReleaseYear { get; private set; } = -1;
@@ -30,7 +31,7 @@ namespace RandaManga.Models
                 Tags = _tagsString.Split(',');
             }
         }
-        public Manga(string name, string description, MangaType type, MangaStatus status, string TagsString, string link, string imagePath, string author, string AgeLimit, int ReleaseYear)
+        public Manga(string name, string description, MangaType type, MangaStatus status, string TagsString, string RusLink,string EngLink, string imagePath, string author, string AgeLimit, int ReleaseYear)
         {
             Name = name;
             Description = description;
@@ -38,7 +39,8 @@ namespace RandaManga.Models
             Status = status;
             this.TagsString = TagsString;
             Tags = TagsString.Split(",");
-            Link = link;
+            this.RusLink = RusLink;
+            this.EngLink = EngLink;
             ImagePath = imagePath;
             Author = author;
             this.AgeLimit = AgeLimit;
@@ -48,7 +50,7 @@ namespace RandaManga.Models
 
         public override string ToString()
         {
-            string str = $"class: Manga name:{this.Name}  description: {this.Description} type: {this.Type} status: {this.Status} tags[ {this.TagsString} ] link:{this.Link} image path: {this.ImagePath} author: {this.Author} age limit: {this.AgeLimit} release year: {this.ReleaseYear}";
+            string str = $"class: Manga name:{this.Name}  description: {this.Description} type: {this.Type} status: {this.Status} tags[ {this.TagsString} ] rus Link:{this.RusLink} eng Link:{this.EngLink} image path: {this.ImagePath} author: {this.Author} age limit: {this.AgeLimit} release year: {this.ReleaseYear}";
             return str;
         }
     }

@@ -13,8 +13,9 @@
     left: 0;
     z-index: 9000;
     display: flex;
-    align-items: center; /* Центрируем элементы по вертикали */
-    justify-content: space-between; /* Распределяет элементы равномерно по горизонтали */
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.8vh solid #503345;
 }
 .logoRef {
     margin-left: 2%;
@@ -34,7 +35,7 @@
 .barDiv {
     background: #C6BDB6;
     display: grid;
-    grid-template-columns: 33.25% 12.5% 12.5% 12.5% 29.25%;
+    grid-template-columns: 29.5% 15% 15% 15% 25.5%;
     align-content: center;
     justify-content: center;
     height: 7vh;
@@ -57,7 +58,7 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
-    background-color: #C6BDB6;
+    background-color: transparent;
     color: #88495E;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -76,9 +77,9 @@
 .grid-item label {
     text-align: center;
     font-family: 'Arial Rounded MT';
-    font-size: 2vw;
+    font-size: 4vmin;
 }
 .grid:hover label {
-    font-size: 2.1vw;
+    font-size: 4.2vmin;
     color: #503345;
 }
