@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IuBumGIQBHVfVnK3xDadWJya0FoAIaC1RNhxa6eHFsw=",
+  "Hash": "FKn4D7BrmxQFgYIV39oybv+9HibhIoEHensfOD6EJc0=",
   "Source": "RandaManga",
   "BasePath": "_content/RandaManga",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RandaManga.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\gill_sans_ultra_bold_condensed.woff",
+      "SourceId": "RandaManga",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
+      "BasePath": "_content/RandaManga",
+      "RelativePath": "css/gill_sans_ultra_bold_condensed.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\gill_sans_ultra_bold_condensed.woff"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\Index.css",

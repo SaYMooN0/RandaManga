@@ -1,10 +1,60 @@
-﻿.mainLogo {
+﻿@font-face {
+    font-family: 'Gill Sans Ultra Bold Condensed';
+    src: url('gill_sans_ultra_bold_condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.mainLogo {
     position: absolute;
-    top: 18vh;
+    top: 3vh;
     left: 0;
     right: 0;
-    width: 80vw;
-    height: 60vh;
+    width: 48vw;
+    height: 30vh;
     margin: auto;
-    background: #1f3165;
+    background-color:transparent;
+}
+.logoFirstWord {
+    font-size: 22vmin;
+    font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
+    font-weight: 600;
+    color: #88495E;
+    background-color: transparent;
+    margin-top: 7vh;
+}
+.logoSecondWord {
+    font-size: 25vmin;
+    font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
+    font-weight: 600;
+    color: #503345;
+    background-color: transparent;
+    text-align: right;
+    margin-top: -27vh;
+}
+.infoDiv {
+    position: absolute;
+    top: 66vh;
+    left: 0;
+    right: 0;
+    width: 70vw;
+    height: 104vw;
+    margin: auto;
+    background-color:transparent;
+    border-left: 7px solid #503345;
+    border-right: 7px solid #503345;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+}
+.infoText {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    color: #88495E;
+    font-size: 3.8vmin;
+}
+.infoFirstWord {
+    font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
+    font-weight: 600;
+    color: #503345;
+    font-size: 4.5vmin;
 }
