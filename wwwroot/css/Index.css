@@ -4,6 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .mainLogo {
     position: absolute;
     top: 3vh;
@@ -12,8 +13,9 @@
     width: 48vw;
     height: 30vh;
     margin: auto;
-    background-color:transparent;
+    background-color: transparent;
 }
+
 .logoFirstWord {
     font-size: 22vmin;
     font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
@@ -22,6 +24,7 @@
     background-color: transparent;
     margin-top: 7vh;
 }
+
 .logoSecondWord {
     font-size: 25vmin;
     font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
@@ -31,30 +34,58 @@
     text-align: right;
     margin-top: -27vh;
 }
+
 .infoDiv {
     position: absolute;
     top: 66vh;
     left: 0;
     right: 0;
     width: 70vw;
-    height: 104vw;
+    height: 19vw;
     margin: auto;
-    background-color:transparent;
+    background-color: transparent;
     border-left: 7px solid #503345;
     border-right: 7px solid #503345;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vh;
 }
+
 .infoText {
     font-family: 'Segoe UI';
     font-weight: 500;
     color: #88495E;
     font-size: 3.8vmin;
 }
+
 .infoFirstWord {
     font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
     font-weight: 600;
     color: #503345;
     font-size: 4.5vmin;
+}
+
+.expertsRecommendationContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 120vh;
+    height: 40vh;
+    width: 40vw;
+    background-color: transparent;
+    
+}
+
+.expertsRecommendationHeader {
+    display: flex;
+    justify-content: center;
+    color: #88495E;
+    font-family: 'Segoe UI';
+    font-size: 5vmin;
+    font-weight: 600;
+}
+
+.expertsRecommendation {
+
 }
