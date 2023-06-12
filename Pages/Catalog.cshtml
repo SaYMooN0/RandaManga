@@ -1,18 +1,12 @@
 ﻿@page
 @model RandaManga.Pages.CatalogModel
-@{
-}
-<h1>1</h1>
-<h1>2</h1>
-<h1>3</h1>
-<h1>4</h1>
-<h1>Catalog</h1>
-@{ int a = 0;}
-@foreach (RandaManga.Models.Manga item in Model.mangaList)
-{
-  
-    <h1>@a</h1>
-    <h1>@item.ToString()</h1>
-    a++;
-}
-<h1>End</h1>
+
+<div class="catalogContainer">
+    @foreach (RandaManga.Models.Manga item in Model.mangaList)
+    {
+        <a class="catalogMangaLink">
+            @item.Name;
+        </a>
+        
+    }
+</div>
