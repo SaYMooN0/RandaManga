@@ -1,18 +1,37 @@
-﻿.catalogContainer {
+﻿
+.catalogContainer {
     margin-top: 14vh;
     margin-left:2vw;
     width: 78vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12vw, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10.5vw, 1fr));
     grid-row-gap: 1.5vh;
     grid-column-gap:3vw;
 }
 
-.catalogMangaLink { /* Change this to control how many items per line */
-    background-color:red;
+.catalogMangaLink {
+    border: 7px solid #503345;
+    border-radius:4px;
+    width: 10.5vw;
+    text-decoration:none;
+   
 }
 .catalogImage {
+    width: inherit;
+    object-fit: contain;
+    border-bottom: 7px solid #503345;
+    aspect-ratio: 1/1.58;
+    object-fit: contain;
 }
 
 .catalogMangaLabel {
+    height:1.7vh;
+    width: inherit;
+    color: aliceblue;
+    text-align: center;
+    margin-top: -2px;
+    font-family: 'Segoe UI';
+    color: #88495E;
+    font-size:2.1vmin;
+    font-weight: 600;
 }

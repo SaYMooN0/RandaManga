@@ -4,8 +4,9 @@
 <div class="catalogContainer">
     @foreach (RandaManga.Models.Manga item in Model.mangaList)
     {
-        <a class="catalogMangaLink">
-            @item.Name;
+        <a class="catalogMangaLink" href="@item.RusLink">
+            <img src="@item.ImagePath" class="catalogImage">
+            <p class="catalogMangaLabel">@item.Name</p>
         </a>
         
     }
