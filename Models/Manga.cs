@@ -11,7 +11,6 @@ namespace RandaManga.Models
         public string Name { get; private set; } = "Default_Manga_Name";
         public string Description { get; private set; } = "Default_Manga_Description";
         public string Author { get; private set; } = "Default_Author";
-        
         public MangaType Type { get; private set; } = MangaType.Unknown;
         public MangaStatus Status { get; private set; } = MangaStatus.Unknown;
         public string RusLink { get; private set; } = "No_rus link was found";

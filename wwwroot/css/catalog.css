@@ -35,3 +35,24 @@
     font-size:2.1vmin;
     font-weight: 600;
 }
+.catalogFilterDiv {
+    background-color: transparent;
+    position: absolute;
+    top: 13vh;
+    right: 20px;
+    width: 16vw;
+    height: 81vh;
+    border: 7px solid #503345;
+    border-radius: 7px;
+}
+.catalogFilterTagDiv {
+    margin-top:1vh;
+    background-color: transparent;
+    right: 20px;
+    width: inherit;
+    height: 4vh;
+    background-color:blue;
+    
+}
+.filtersText {
+}
