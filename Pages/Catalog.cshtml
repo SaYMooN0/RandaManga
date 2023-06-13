@@ -4,7 +4,7 @@
 <div class="catalogContainer">
     @foreach (RandaManga.Models.Manga item in Model.mangaList)
     {
-        <a class="catalogMangaLink" href="@item.RusLink">
+        <a class="catalogMangaLink" asp-page="MangaPage" asp-route-id="@item.Id">
             <img src="@item.ImagePath" class="catalogImage">
             <p class="catalogMangaLabel">@item.Name</p>
         </a>

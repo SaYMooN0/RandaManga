@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WZPq0zmEepHe8fsAN7wPD24QtZfMI78/03rj3q/DfUQ=",
+  "Hash": "KAsOyYwjNk5hR7hVBEtgpzskZTmcb43bKW03U3s5NB8=",
   "Source": "RandaManga",
   "BasePath": "_content/RandaManga",
   "Mode": "Default",
@@ -66,23 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\catalog.css"
-    },
-    {
-      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\gill_sans_ultra_bold_condensed.woff",
-      "SourceId": "RandaManga",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
-      "BasePath": "_content/RandaManga",
-      "RelativePath": "css/gill_sans_ultra_bold_condensed.woff",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\gill_sans_ultra_bold_condensed.woff"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\Index.css",
@@ -151,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\fonts\\gill_sans_ultra_bold_condensed.woff",
+      "SourceId": "RandaManga",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
+      "BasePath": "_content/RandaManga",
+      "RelativePath": "fonts/gill_sans_ultra_bold_condensed.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\gill_sans_ultra_bold_condensed.woff"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\icn.png",

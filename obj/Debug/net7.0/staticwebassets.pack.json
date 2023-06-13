@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\catalog.css"
     },
     {
-      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\gill_sans_ultra_bold_condensed.woff",
-      "PackagePath": "staticwebassets\\css\\gill_sans_ultra_bold_condensed.woff"
-    },
-    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
@@ -27,6 +23,10 @@
     {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\fonts\\gill_sans_ultra_bold_condensed.woff",
+      "PackagePath": "staticwebassets\\fonts\\gill_sans_ultra_bold_condensed.woff"
     },
     {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\icn.png",
