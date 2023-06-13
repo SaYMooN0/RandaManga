@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\images\\mangaCovers\\souleater.jpg"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\catalog.js",
+      "PackagePath": "staticwebassets\\js\\catalog.js"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\favicon.ico",
       "PackagePath": "staticwebassets\\js\\favicon.ico"
     },

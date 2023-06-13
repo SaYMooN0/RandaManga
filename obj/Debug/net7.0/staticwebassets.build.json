@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KAsOyYwjNk5hR7hVBEtgpzskZTmcb43bKW03U3s5NB8=",
+  "Hash": "EQXRGUG83j7bZ2CO7qzsf980h1WDrtTdfq9BAcmp+8I=",
   "Source": "RandaManga",
   "BasePath": "_content/RandaManga",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mangaCovers\\souleater.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\catalog.js",
+      "SourceId": "RandaManga",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
+      "BasePath": "_content/RandaManga",
+      "RelativePath": "js/catalog.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\catalog.js"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\favicon.ico",
