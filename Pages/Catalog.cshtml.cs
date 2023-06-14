@@ -8,6 +8,7 @@ namespace RandaManga.Pages
     {
         public ApplicationContext context;
         internal List<Manga> mangaList { get; set; } = new();
+        internal List<string> allTags { get; set; } = new();
         public CatalogModel(ApplicationContext db)
         {
             this.context = db;
@@ -27,8 +28,15 @@ namespace RandaManga.Pages
                 context.SaveChanges();
                 mangaList = context.MangaCatalog.AsNoTracking().ToList();
             }
-           
+            foreach (var item in mangaList)
+            {
+                foreach (string tag in item.Tags)
+                {
+                    if (!allTags.Contains(tag))
+                        allTags.Add(tag);
+                }
+            }
+            allTags.Sort();
         }
     }
 }
- 

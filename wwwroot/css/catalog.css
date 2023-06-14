@@ -1,21 +1,21 @@
 ﻿
 .catalogContainer {
     margin-top: 14vh;
-    margin-left:2vw;
+    margin-left: 2vw;
     width: 78vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10.5vw, 1fr));
     grid-row-gap: 1.5vh;
-    grid-column-gap:3vw;
+    grid-column-gap: 3vw;
 }
 
 .catalogMangaLink {
     border: 7px solid #503345;
-    border-radius:4px;
+    border-radius: 4px;
     width: 10.5vw;
-    text-decoration:none;
-   
+    text-decoration: none;
 }
+
 .catalogImage {
     width: inherit;
     object-fit: contain;
@@ -25,16 +25,17 @@
 }
 
 .catalogMangaLabel {
-    height:1.7vh;
+    height: 1.7vh;
     width: inherit;
     color: aliceblue;
     text-align: center;
     margin-top: -2px;
     font-family: 'Segoe UI';
     color: #88495E;
-    font-size:2.1vmin;
+    font-size: 2.1vmin;
     font-weight: 600;
 }
+
 .catalogFilterDiv {
     background-color: transparent;
     position: absolute;
@@ -46,8 +47,8 @@
     border-radius: 7px;
     display: flex;
     justify-content: center;
-    
 }
+
 .catalogFilterTagDiv {
     margin-top: 1vh;
     right: 20px;
@@ -58,10 +59,12 @@
     transition: background-color 0.3s ease,transform 0.4s ease;
     border: 3px;
 }
+
 .svgTagAddIcon {
     height: 65%;
     transition: fill 0.2s ease, transform 0.2s ease;
 }
+
 .filtersText {
     margin-top: 0;
     margin-left: 1.5vw;
@@ -70,9 +73,8 @@
     font-size: 2.6vh;
     font-weight: 600;
     transition: color 0.2s ease, transform 0.2s ease;
-  
-    
 }
+
 .catalogFilterTagDiv:hover {
     background-color: #b0a49b;
     border-color: #b0a49b;
@@ -86,15 +88,17 @@
     }
 
     .catalogFilterTagDiv:hover .svgAddIcon, .catalogFilterTagDiv:hover .svgLine {
-        margin-top:-5%;
+        margin-top: -5%;
         fill: #503345;
         transform: scale(1.05);
     }
+
 .tagsChoosingMode {
     background-color: transparent;
     display: none;
     width: 96%;
 }
+
 .tagsChoosingModeTopLayoutDiv {
     height: 5%;
     margin-top: 2%;
@@ -104,16 +108,17 @@
     display: grid;
     grid-template-columns: 2fr 5fr;
 }
+
 .svgBackIcon {
     margin-left: 10%;
     height: 90%;
-    fill: #88495E; 
-    transition: fill 0.3s ease; 
+    fill: #88495E;
+    transition: fill 0.3s ease;
 }
 
     .svgBackIcon:hover {
         fill: #503345;
-        margin-top:-5%;
+        margin-top: -5%;
         height: 110%;
     }
 
@@ -141,9 +146,11 @@
     margin-top: 5%;
     max-height: 90%;
 }
+
     .tagsList::-webkit-scrollbar {
         width: 0.4vw; /* Задаем ширину полосы прокрутки */
     }
+
     .tagsList::-webkit-scrollbar-track {
         background: #b0a49b;
     }
@@ -156,3 +163,18 @@
         .tagsList::-webkit-scrollbar-thumb:hover {
             background: #503345;
         }
+
+.tagChoosingDiv {
+    display: grid;
+    grid-template-columns: 4fr 1fr; 
+    width: 98%;
+    height: 3vh;
+    background-color: slategrey;
+    border-color: green;
+    color: aqua;
+    margin-top: 4px;
+}
+.tagChoosingCheckBox
+{
+    color: peru;
+}
