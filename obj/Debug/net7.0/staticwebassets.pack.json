@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\mangaCovers\\souleater.jpg"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\yuukokunomoriarty.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\yuukokunomoriarty.jpg"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\js\\catalog.js",
       "PackagePath": "staticwebassets\\js\\catalog.js"
     },

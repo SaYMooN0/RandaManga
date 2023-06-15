@@ -8,8 +8,10 @@ namespace RandaManga.Pages
     public class CatalogModel : PageModel
     {
         public ApplicationContext context;
-        internal List<Manga> mangaList { get; set; } = new();
-        internal List<string> allTags { get; set; } = new() {};
+        internal List<Manga> allMangaList { get; set; } = new();
+        internal List<Manga> mangaListToShow { get; set; } = new();
+        internal List<string> allTags { get; set; } = new() { };
+        internal string[] SelectedTags { get; set; }={ };
         public CatalogModel(ApplicationContext db)
         {
             this.context = db;
@@ -17,37 +19,40 @@ namespace RandaManga.Pages
         public void OnGet()
         {
             fillTheTags();
+            mangaListToShow = allMangaList.ToList();
         }
         public void OnPost()
         {
             fillTheTags();
         }
-        public void OnPostTagApplied(string[] SelectedTags)
+        public void OnPostTagApplied(string[] selectedTags)
         {
-            List<string> checkedTags = new List<string>();
-
-            if (SelectedTags != null)
-            {
-                checkedTags = SelectedTags.ToList();
-            }
             fillTheTags();
+            this.SelectedTags = selectedTags;
+            FormListToShow();
+
         }
         public void fillTheTags()
         {
-            Manga m = new Manga("Пожиратель душ", "Для борьбы со злобным Кишином, который может ввергнуть мир в пучину безумия," +
+            Manga souleaterManga = new Manga("Пожиратель душ", "Для борьбы со злобным Кишином, который может ввергнуть мир в пучину безумия," +
                 " Шинигами-сама создаёт Академию — место, где проходит совместное обучение Оружий и Повелителей. Первые являются " +
                 "тем самым оружием, которое позволит остановить гибель мира; вторые — те, кто будет держать это оружие. Коса Смерти получится," +
                 " когда оружие съест 99 злых душ, готовых стать Кишином, и 1 душу ведьмы, а потому все повелители активно соревнуются в создании" +
                 " Косы Смерти. Ну что, вы готовы окунуться в мир приключений?", MangaType.Manga, MangaStatus.Completed, "Боевик,Драма,Комедия,Приключения,Психология,Сверхъестественное,Сёнэн,Фэнтези,Этти,Зомби,Демоны,Магия,Боги,Бои на мечах,Борьба за власть,Волшебные существа,ГГ женщина,ГГ мужчина,Дружба,Жестокий мир,Злые духи,Магическая академия,Навыки / способности,Волшебники / маги",
                 "https://mangalib.org/soul_eater?section=info", "https://www.mangaread.org/manga/soul-eater/", @"/images/mangaCovers/souleater.jpg", "OHKUBO Atsushi", "16+", 2003);
-            mangaList = context.MangaCatalog.AsNoTracking().ToList();
-            if (mangaList.Count == 0)
+            Manga yuukokunomoriarty = new Manga("Патриотизм Мориарти", "Конец позапрошлого века, Британская империя правит миром, и в основе всего лежит классовая система. И тут внезапно появляется Уильям Джеймс Мориарти — молодой человек, желающий уничтожить зло, проистекающее из классовой дискриминации, и создать идеальную страну."
+                , MangaType.Manga, MangaStatus.Completed, "Детектив,Драма,История,Психология,Сёнэн,Триллер,Фантастика,Антигерой,Преступники / Криминал,ГГ мужчина,Жестокий мир,Империи,Насилие / жестокость,Огнестрельное оружие,Скрытие личности,Умный ГГ",
+                "https://mangalib.me/yuukoku-no-moriarty?section=info&ui=4199976", "https://www.mangago.me/read-manga/yuukoku_no_moriarty/", @"/images/mangaCovers/yuukokunomoriarty.jpg", "Ryousuke Takeuchi", "16+", 2016);
+
+            allMangaList = context.MangaCatalog.AsNoTracking().ToList();
+            if (allMangaList.Count < 2)
             {
-                context.MangaCatalog.Add(m);
+                context.MangaCatalog.Add(souleaterManga);
+                context.MangaCatalog.Add(yuukokunomoriarty);
                 context.SaveChanges();
-                mangaList = context.MangaCatalog.AsNoTracking().ToList();
+                allMangaList = context.MangaCatalog.AsNoTracking().ToList();
             }
-            foreach (var item in mangaList)
+            foreach (var item in allMangaList)
             {
                 foreach (string tag in item.Tags)
                 {
@@ -56,6 +61,21 @@ namespace RandaManga.Pages
                 }
             }
             allTags.Sort();
+        }
+        private void FormListToShow()
+        {
+            int coincidences = 0;
+            foreach (Manga manga in allMangaList)
+            {
+                coincidences = 0;
+                foreach(string t in manga.Tags)
+                {
+                    if(SelectedTags.Contains(t))
+                        coincidences++;
+                }
+                if (coincidences == SelectedTags.Length)
+                    mangaListToShow.Add(manga);
+            }
         }
     }
 }

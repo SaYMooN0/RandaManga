@@ -19,7 +19,14 @@
                 {
                     <div class="tagChoosingDiv">
                         <label class="tagChoosingLabel">@tag</label>
-                        <input type="checkbox" name="SelectedTags" value="@tag" class="tagChoosingCheckBox">
+                        @if (Model.SelectedTags.Contains(tag))
+                        {
+                            <input type="checkbox" name="SelectedTags" value="@tag" class="tagChoosingCheckBox" checked>
+                        }
+                        else
+                        {
+                            <input type="checkbox" name="SelectedTags" value="@tag" class="tagChoosingCheckBox">
+                        }
                     </div>
                 }
             </div>
@@ -43,7 +50,7 @@
 </div>
 
 <div class="catalogContainer">
-    @foreach (RandaManga.Models.Manga item in Model.mangaList)
+    @foreach (RandaManga.Models.Manga item in Model.mangaListToShow)
     {
         <a class="catalogMangaLink" asp-page="MangaPage" asp-route-id="@item.Id">
             <img src="@item.ImagePath" class="catalogImage">
