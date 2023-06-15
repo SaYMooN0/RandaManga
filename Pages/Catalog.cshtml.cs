@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RandaManga.Models;
@@ -8,12 +9,30 @@ namespace RandaManga.Pages
     {
         public ApplicationContext context;
         internal List<Manga> mangaList { get; set; } = new();
-        internal List<string> allTags { get; set; } = new();
+        internal List<string> allTags { get; set; } = new() {};
         public CatalogModel(ApplicationContext db)
         {
             this.context = db;
         }
         public void OnGet()
+        {
+            fillTheTags();
+        }
+        public void OnPost()
+        {
+            fillTheTags();
+        }
+        public void OnPostTagApplied(string[] SelectedTags)
+        {
+            List<string> checkedTags = new List<string>();
+
+            if (SelectedTags != null)
+            {
+                checkedTags = SelectedTags.ToList();
+            }
+            fillTheTags();
+        }
+        public void fillTheTags()
         {
             Manga m = new Manga("Пожиратель душ", "Для борьбы со злобным Кишином, который может ввергнуть мир в пучину безумия," +
                 " Шинигами-сама создаёт Академию — место, где проходит совместное обучение Оружий и Повелителей. Первые являются " +

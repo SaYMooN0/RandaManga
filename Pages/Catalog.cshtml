@@ -13,15 +13,22 @@
                 Очистить теги
             </button>
         </div>
-        <div class="tagsList">
-            @foreach (string tag in Model.allTags)
-            {
-                <div class="tagChoosingDiv">
-                    @tag
-                    <input type="checkbox" class="tagChoosingCheckBox">
-                </div>
-            }
-        </div>
+        <form method="post" asp-page-handler="TagApplied" >
+            <div class="tagsList">
+                @foreach (string tag in Model.allTags)
+                {
+                    <div class="tagChoosingDiv">
+                        <label class="tagChoosingLabel">@tag</label>
+                        <input type="checkbox" name="SelectedTags" value="@tag" class="tagChoosingCheckBox">
+                    </div>
+                }
+            </div>
+            <div class="ButtonContainer">
+                <button class="tagsChoosingModeBottomLayoutButton" type="submit">
+                    Подтвердить
+                </button>
+            </div>
+        </form>
     </div>
     <div class="catalogFilterTagDiv" onclick="tagsOnClickHandlerShow()">
         <p class="filtersText">

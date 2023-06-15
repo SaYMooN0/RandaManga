@@ -15,3 +15,6 @@ function tagsOnClickHandlerHide() {
 function deleteAllTags() {
     alert("all tags deleted");
 }
+function tagsApplied() {
+    alert("all tags appliead");
+}
