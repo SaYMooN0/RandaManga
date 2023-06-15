@@ -47,10 +47,15 @@
             </g>
         </svg>
     </div>
-    <div id="allOtherFilters" class="allOtherFilters">
-        <form method="post" class="allInfoInputForm">
+    <div id="allOtherFiltersDiv" class="allOtherFiltersDiv">
+        <form method="post" asp-page-handler="FiltersApplied" class="allFiltersForm">
+            <p class="releaseYearLabel">Год выпуска</p>
             <div class="yearRangeInput">
-                <input type="text" class="yearInputField" />
+                <p class="auxiliaryText">от</p>
+                <input type="text" class="yearInputField" name="MinYear" value="@Model.Filters.MinYear"/>
+                <p></p>
+                <p class="auxiliaryText">до</p>
+                <input type="text" class="yearInputField" name="MaxYear" value="@Model.Filters.MaxYear" />
             </div>
             <div class="FormButtonsContainer">
                 <button class="filterFormButtons" type="reset">

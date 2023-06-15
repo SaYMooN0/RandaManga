@@ -12,27 +12,30 @@ namespace RandaManga.Pages
         internal List<Manga> mangaListToShow { get; set; } = new();
         internal List<string> allTags { get; set; } = new() { };
         internal string[] SelectedTags { get; set; }={ };
+        public Filters Filters { get; set; }= new();    
         public CatalogModel(ApplicationContext db)
         {
             this.context = db;
         }
         public void OnGet()
         {
-            fillTheTags();
+            fillContent();
             mangaListToShow = allMangaList.ToList();
         }
-        public void OnPost()
+        public void OnPostFiltersApplied(Filters filters)
         {
-            fillTheTags();
+            this.Filters = filters;
+            fillContent();
+            FormListToShow();
         }
         public void OnPostTagApplied(string[] selectedTags)
         {
-            fillTheTags();
+            fillContent();
             this.SelectedTags = selectedTags;
             FormListToShow();
 
         }
-        public void fillTheTags()
+        public void fillContent()
         {
             Manga souleaterManga = new Manga("Пожиратель душ", "Для борьбы со злобным Кишином, который может ввергнуть мир в пучину безумия," +
                 " Шинигами-сама создаёт Академию — место, где проходит совместное обучение Оружий и Повелителей. Первые являются " +
@@ -74,7 +77,8 @@ namespace RandaManga.Pages
                         coincidences++;
                 }
                 if (coincidences == SelectedTags.Length)
-                    mangaListToShow.Add(manga);
+                    if(manga.ReleaseYear<Filters.MaxYear&&manga.ReleaseYear>Filters.MinYear)
+                        mangaListToShow.Add(manga);
             }
         }
     }

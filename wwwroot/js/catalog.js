@@ -1,5 +1,5 @@
 function tagsOnClickHandlerShow() {
-    var OtherFilters = document.querySelector(".allInfoInputForm");
+    var OtherFilters = document.querySelector(".allOtherFiltersDiv");
     OtherFilters.style.display = "none";
     var catalogFilterTagDiv = document.querySelector(".catalogFilterTagDiv");
     var tagsChoosingMode = document.querySelector(".tagsChoosingMode");
@@ -8,7 +8,7 @@ function tagsOnClickHandlerShow() {
 
 }
 function tagsOnClickHandlerHide() {
-    var OtherFilters = document.querySelector(".allInfoInputForm");
+    var OtherFilters = document.querySelector(".allOtherFiltersDiv");
     OtherFilters.style.display = "block";
     var catalogFilterTagDiv = document.getElementById("catalogFilterTagDiv");
     var tagsChoosingMode = document.querySelector(".tagsChoosingMode");
