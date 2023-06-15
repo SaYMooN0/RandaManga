@@ -13,7 +13,7 @@
                 Очистить теги
             </button>
         </div>
-        <form method="post" asp-page-handler="TagApplied" >
+        <form method="post" asp-page-handler="TagApplied">
             <div class="tagsList">
                 @foreach (string tag in Model.allTags)
                 {
@@ -37,7 +37,7 @@
             </div>
         </form>
     </div>
-    <div class="catalogFilterTagDiv" onclick="tagsOnClickHandlerShow()">
+    <div class="catalogFilterTagDiv" onclick="tagsOnClickHandlerShow()" id="catalogFilterTagDiv">
         <p class="filtersText">
             Теги
         </p>
@@ -46,6 +46,21 @@
                 <path fill-rule="evenodd" class="svgLine" clip-rule="evenodd" d="M12 3a1 1 0 0 0-1 1v7H4a1 1 0 1 0 0 2h7v7a1 1 0 1 0 2 0v-7h7a1 1 0 1 0 0-2h-7V4a1 1 0 0 0-1-1z" fill="#88495E" />
             </g>
         </svg>
+    </div>
+    <div id="allOtherFilters" class="allOtherFilters">
+        <form method="post" class="allInfoInputForm">
+            <div class="yearRangeInput">
+                <input type="text" class="yearInputField" />
+            </div>
+            <div class="FormButtonsContainer">
+                <button class="filterFormButtons" type="reset">
+                    Очистить
+                </button>
+                <button class="filterFormButtons" type="submit">
+                    Подтвердить
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 

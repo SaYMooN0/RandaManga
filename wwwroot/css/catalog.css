@@ -39,6 +39,7 @@
 }
 
 .catalogFilterDiv {
+
     background-color: transparent;
     position: absolute;
     top: 13vh;
@@ -47,14 +48,12 @@
     height: 81vh;
     border: 7px solid #503345;
     border-radius: 7px;
-    display: flex;
-    justify-content: center;
 }
 
 .catalogFilterTagDiv {
     margin-top: 1vh;
-    right: 20px;
-    width: 15vw;
+    width:90%;
+    margin-left:5%;
     height: 3.6vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -63,7 +62,7 @@
 }
 
 .svgTagAddIcon {
-    height: 65%;
+    height: 3.7vh;
     transition: fill 0.2s ease, transform 0.2s ease;
 }
 
@@ -102,7 +101,8 @@
 }
 
 .tagsChoosingModeTopLayoutDiv {
-    height: 5%;
+    margin-left:3%;
+    height: 5vh;
     margin-top: 2%;
     position: sticky;
     z-index: 888;
@@ -144,8 +144,9 @@
 
 
 .tagsList {
+    margin-left: 3%;
     overflow-y: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     max-height: 85%;
     height: 70vh;
 }
@@ -210,4 +211,31 @@
         font-size: 2.3vh;
         width: 64%;
         height: 5.1%;
+        
     }
+.allOtherFilters {
+    margin-top:3%;
+    height: 92%;
+}
+.allInfoInputForm {
+    height: 100%;
+    background-color: floralwhite;
+}
+.yearRangeInput {
+    height:8%;
+    background-color:aquamarine;
+}
+.yearInputField {
+    background-color: blanchedalmond;
+    width: 40%;
+}
+.FormButtonsContainer {
+    background-color:blanchedalmond;
+    margin-bottom:12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.filterFormButtons
+{
+
+}
