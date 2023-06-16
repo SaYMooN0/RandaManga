@@ -52,7 +52,7 @@
             <p class="releaseYearLabel">Год выпуска</p>
             <div class="yearRangeInput">
                 <p class="auxiliaryText">от</p>
-                <input type="text" class="yearInputField" name="MinYear" value="@Model.Filters.MinYear"/>
+                <input type="text" class="yearInputField" name="MinYear" value="@Model.Filters.MinYear" />
                 <p></p>
                 <p class="auxiliaryText">до</p>
                 <input type="text" class="yearInputField" name="MaxYear" value="@Model.Filters.MaxYear" />
@@ -68,14 +68,20 @@
         </form>
     </div>
 </div>
+@if (Model.mangaListToShow.Count > 0)
+{
+    <div class="catalogContainer">
+        @foreach (RandaManga.Models.Manga item in Model.mangaListToShow)
+        {
+            <a class="catalogMangaLink" asp-page="MangaPage" asp-route-id="@item.Id">
+                <img src="@item.GetFullImagePath()" class="catalogImage">
+                <p class="catalogMangaLabel">@item.Name</p>
+            </a>
 
-<div class="catalogContainer">
-    @foreach (RandaManga.Models.Manga item in Model.mangaListToShow)
-    {
-        <a class="catalogMangaLink" asp-page="MangaPage" asp-route-id="@item.Id">
-            <img src="@item.GetFullImagePath()" class="catalogImage">
-            <p class="catalogMangaLabel">@item.Name</p>
-        </a>
-
-    }
-</div>
+        }
+    </div>
+}
+else
+{
+    <p class="notFoundLabel">Мы не нашли ни одной манги,манхвы или маньхуа, которые бы полностью соответствовали вашему выбору :( <br>Попробуйте немного поменять ваши фильтры</p>
+}

@@ -1,4 +1,17 @@
 ﻿
+.notFoundLabel {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    margin-top: 20vh;
+    left: 0;
+    right: 0;
+    width: 60vw;
+    font-family: 'Segoe UI';
+    color: #88495E;
+    font-size: 5vh;
+}
+
 .catalogContainer {
     margin-top: 14vh;
     margin-left: 2vw;
@@ -39,7 +52,6 @@
 }
 
 .catalogFilterDiv {
-
     background-color: transparent;
     position: absolute;
     top: 13vh;
@@ -52,8 +64,8 @@
 
 .catalogFilterTagDiv {
     margin-top: 1vh;
-    width:90%;
-    margin-left:5%;
+    width: 90%;
+    margin-left: 5%;
     height: 3.6vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -101,7 +113,7 @@
 }
 
 .tagsChoosingModeTopLayoutDiv {
-    margin-left:3%;
+    margin-left: 3%;
     height: 5vh;
     margin-top: 2%;
     position: sticky;
@@ -185,11 +197,13 @@
     font-family: 'Segoe UI';
     font-weight: 600;
 }
+
 .ButtonContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .tagsChoosingModeBottomLayoutButton {
     margin-top: -0.5%;
     width: 60%;
@@ -210,16 +224,18 @@
         font-size: 2.3vh;
         width: 64%;
         height: 5.1%;
-        
     }
+
 .allOtherFiltersDiv {
     margin-top: 3%;
     height: 92%;
 }
+
 .allFiltersForm {
-    width:100%;
+    width: 100%;
     height: 100%;
 }
+
 .releaseYearLabel {
     margin-left: 5%;
     width: 90%;
@@ -228,6 +244,7 @@
     font-family: 'Segoe UI';
     font-weight: 600;
 }
+
 .yearRangeInput {
     margin-left: 5%;
     width: 90%;
@@ -237,8 +254,9 @@
     grid-template-columns: 1fr 5fr 1fr 1fr 5fr;
     justify-items: center;
 }
+
 .yearInputField {
-    height:70%;
+    height: 70%;
     width: 85%;
     background-color: transparent;
     border: 0.25vh solid #88495E;
@@ -249,21 +267,22 @@
     font-family: 'Segoe UI';
     font-weight: 500;
 }
+
 .auxiliaryText {
     color: #88495E;
     font-size: 110%;
     text-align: center;
     font-family: 'Segoe UI';
     font-weight: 500;
-    text-align:center;
+    text-align: center;
 }
+
 .FormButtonsContainer {
     background-color: blanchedalmond;
     margin-top: 20%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.filterFormButtons
-{
 
+.filterFormButtons {
 }
