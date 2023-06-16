@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection.PortableExecutable;
+
 namespace RandaManga.Models
 {
     public class ApplicationContext : DbContext
@@ -6,6 +8,7 @@ namespace RandaManga.Models
         public DbSet<Manga> MangaCatalog { get; set; } = null!;
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
         {
+            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -37,10 +40,17 @@ namespace RandaManga.Models
             Manga chainsawman = new Manga("Человек-бензопила", "«Я всегда мечтал жить обычной жизнью: спать в тёплой постели, есть тосты с джемом по утрам, ходить на свидания со своей девушкой и улыбаться каждый день. Но всё изменилось со смертью отца — теперь, Потита, пора убивать!» — с такими словами Дэндзи вместе со своим псом-бензопилой Потитой отправляется на очередной контракт, ведь они — охотники на демонов. Каждый день они убивают ради денег, которые Дэндзи должен отдать одному якудза, иначе долг покойного отца придётся отдать собственной жизнью. Но что ждёт Дэндзи, когда он вернёт весь долг: заживёт обычной жизнью или продолжит спасать мир от демонов? А может, у судьбы свои планы на участь героя?",
                 MangaType.Manga, MangaStatus.Completed, "Боевик,Комедия,Романтика,Сверхъестественное,Сёнэн,Трагедия,Ужасы,Фэнтези,Зомби,Антигерой,Монстры,ГГ мужчина,Дружба,Жестокий мир,Насилие / жестокость,Огнестрельное оружие,Скрытие личности",
                 "https://mangalib.me/chainsaw-man?section=info&ui=4199976", "https://www.mangaread.org/manga/chainsaw-man/", "chainsawman", "Tatsuki Fujimoto", AgeLimitType.Age18, 2018);
+            Manga theirstory = new Manga("Их история", "Вы когда-нибудь влюблялись в того, кто стоял на автобусной остановке, такого чудесного... и милого?.. С той самой остановки и началась эта чудесная, интересная и очень романтичная история о двух девушках, их друзьях, их одноклассниках и об их школе...",
+                MangaType.Manhua, MangaStatus.Ongoing, "Сёдзё-ай,Повседневность,Комедия,Романтика,Школа,ГГ женщина", "https://readmanga.live/ih_istoriia", "https://www.mangago.me/read-manga/tamen_di_gushi/", "theirstory", "Tan Jiu", AgeLimitType.NoAgeLimit, 2014);
+            Manga omniscientrader = new Manga("Всеведущий читатель", "«Я знаю то, что сейчас будет». В тот момент, когда он подумал об этом, мир был уже разрушен, и вдруг открылась новая вселенная. Новая жизнь обычного читателя начинается в мире романа... романа, который смог прочесть лишь он.", MangaType.Manhwa, MangaStatus.Ongoing,
+                "Боевик,Боевые искусства,Постапокалиптика,Приключения,Сверхъестественное,Сэйнэн,Триллер,Фантастика,Фэнтези,Исекай,Реинкарнация,Демоны,Зверолюди,Призраки / Духи,Монстры,Выживание,Путешествие во времени,Боги,Ангелы,Апокалипсис,Артефакты,Бои на мечах,Владыка демонов,Волшебные существа,ГГ мужчина,Драконы,Дружба,Жестокий мир,Злые духи,Игровые элементы,Квесты,Легендарное оружие,Навыки / способности,Насилие / жестокость,Подземелья,Разумные расы,Система,Скрытие личности,Спасение мира,Холодное оружие,Шантаж,ГГ имба,Умный ГГ,Амнезия / Потеря памяти",
+                "https://mangalib.me/jeonjijeog-dogja-sijeom_?section=info&ui=4199976", "https://www.mangaread.org/manga/omniscient-readers-viewpoint/", "omniscientrader", "Sing-Shong", AgeLimitType.Age16, 2020);
             MangaCatalog.Add(souleaterManga);
             MangaCatalog.Add(yuukokunomoriarty);
             MangaCatalog.Add(shinseikievangelion);
             MangaCatalog.Add(chainsawman);
+            MangaCatalog.Add(theirstory);
+            MangaCatalog.Add(omniscientrader);
             SaveChanges();
         }
     }

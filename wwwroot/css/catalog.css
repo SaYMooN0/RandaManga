@@ -17,7 +17,7 @@
     margin-left: 2vw;
     width: 78vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12vw, 1fr));
+    grid-template-columns: repeat(auto-fill, 13vw);
     grid-row-gap: 1.5vh;
     grid-column-gap: 3vw;
 }
@@ -27,11 +27,12 @@
     border-radius: 4px;
     width: 12vw;
     text-decoration: none;
+    background-color: #503345;
 }
 
 .catalogImage {
     margin-top: -2px;
-    background-color: #503345;
+   
     width: inherit;
     object-fit: contain;
     border-bottom: 7px solid #503345;
@@ -40,7 +41,8 @@
 }
 
 .catalogMangaLabel {
-    height: 1.7vh;
+    margin-bottom:0;
+    height: 2.7vh;
     width: inherit;
     color: aliceblue;
     text-align: center;
@@ -49,6 +51,7 @@
     color: #88495E;
     font-size: 2vmin;
     font-weight: 600;
+    background-color: #C6BDB6;
 }
 
 .catalogFilterDiv {

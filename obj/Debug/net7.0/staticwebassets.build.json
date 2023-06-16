@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EPMyRDIo+dG3ZGjPr5R+NUeA7Zt054A7/NY+oxeCGj0=",
+  "Hash": "xh1zi72W47qTJjGg3+lfwldt8me1DEs+I5+fHq90WWg=",
   "Source": "RandaManga",
   "BasePath": "_content/RandaManga",
   "Mode": "Default",
@@ -221,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\images\\mangaCovers\\Default.png"
     },
     {
+      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\omniscientrader.jpg",
+      "SourceId": "RandaManga",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
+      "BasePath": "_content/RandaManga",
+      "RelativePath": "images/mangaCovers/omniscientrader.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mangaCovers\\omniscientrader.jpg"
+    },
+    {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\shinseikievangelion.jpg",
       "SourceId": "RandaManga",
       "SourceType": "Discovered",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\mangaCovers\\souleater.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\theirstory.jpg",
+      "SourceId": "RandaManga",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
+      "BasePath": "_content/RandaManga",
+      "RelativePath": "images/mangaCovers/theirstory.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mangaCovers\\theirstory.jpg"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\yuukokunomoriarty.jpg",
