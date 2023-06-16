@@ -28,6 +28,18 @@
                 return true;
             return false;
         }
+        public bool CheckByType(MangaType type)
+        {
+            if (!Manga && !Manhwa && !Manhua)
+                return true;
+            if (type == MangaType.Manga && Manga)
+                return true;
+            if (type == MangaType.Manhwa && Manhwa)
+                return true;
+            if (type == MangaType.Manhua && Manhua)
+                return true;
+            return false;
+        }
 
 
     }

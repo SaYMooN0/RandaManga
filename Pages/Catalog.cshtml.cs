@@ -65,7 +65,8 @@ namespace RandaManga.Pages
                 }
                 if (coincidences == selectedTagsCount)
                     if (Filters.CheckByReleaseYear(manga.ReleaseYear) &&
-                        Filters.CheckByAgeRaiting(manga.AgeLimit))
+                        Filters.CheckByAgeRaiting(manga.AgeLimit)&&
+                        Filters.CheckByType(manga.Type))
                         mangaListToShow.Add(manga);
             }
         }
