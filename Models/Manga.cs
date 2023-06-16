@@ -16,7 +16,7 @@ namespace RandaManga.Models
         public string RusLink { get; private set; } = "No_rus link was found";
         public string EngLink { get; private set; } = "No_eng link was found";
         public string ImagePath { get; private set; } = @"/images/mangaCovers/Default.png";
-        public int AgeLimit { get; private set; } = 0;
+        public AgeLimitType AgeLimit{ get; private set; }
         public int ReleaseYear { get; private set; } = -1;
         [NotMapped]
         public string[] Tags { get; private set; } = new string[0];
@@ -30,7 +30,7 @@ namespace RandaManga.Models
                 Tags = _tagsString.Split(',');
             }
         }
-        public Manga(string name, string description, MangaType type, MangaStatus status, string TagsString, string RusLink,string EngLink, string imagePath, string author, int AgeLimit, int ReleaseYear)
+        public Manga(string name, string description, MangaType type, MangaStatus status, string TagsString, string RusLink,string EngLink, string imagePath, string author, AgeLimitType AgeLimit, int ReleaseYear)
         {
             Name = name;
             Description = description;
@@ -59,4 +59,5 @@ namespace RandaManga.Models
     }
     public enum MangaType { Manga, Manhwa, Manhua, Unknown };
     public enum MangaStatus { Ongoing, Announcement, Completed, Suspended, Unknown };
+    public enum AgeLimitType { NoAgeLimit, Age16, Age18 }
 }

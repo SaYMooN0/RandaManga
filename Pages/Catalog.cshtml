@@ -49,13 +49,22 @@
     </div>
     <div id="allOtherFiltersDiv" class="allOtherFiltersDiv">
         <form method="post" asp-page-handler="FiltersApplied" class="allFiltersForm">
-            <p class="releaseYearLabel">Год выпуска</p>
+            <p class="formLabel">Год выпуска</p>
             <div class="yearRangeInput">
                 <p class="auxiliaryText">от</p>
                 <input type="text" class="yearInputField" name="MinYear" value="@Model.Filters.MinYear" />
                 <p></p>
                 <p class="auxiliaryText">до</p>
                 <input type="text" class="yearInputField" name="MaxYear" value="@Model.Filters.MaxYear" />
+            </div>
+            <p class="formLabel">Возрастной рейтинг</p>
+            <div class="ageRaitingContainer">
+                <p class="ageRaitingLabel">Отсутствует</p>
+                <input asp-for="@Model.Filters.AgeRatingAbsent" class="ageRaitingCheckbox" />
+                <p class="ageRaitingLabel">16+</p>
+                <input asp-for="@Model.Filters.AgeRating16" class="ageRaitingCheckbox" />
+                <p class="ageRaitingLabel">18+</p>
+                <input asp-for="@Model.Filters.AgeRating18" class="ageRaitingCheckbox" />
             </div>
             <div class="FormButtonsContainer">
                 <button class="filterFormButtons" type="reset">
