@@ -11,6 +11,10 @@
         public bool Manga { get; set; }
         public bool Manhwa { get; set; }
         public bool Manhua { get; set; }
+        public bool Ongoing { get; set; }
+        public bool Announcement { get; set; }
+        public bool Completed { get; set; }
+        public bool Suspended { get; set; }
         public bool CheckByReleaseYear(int year)
         {
             if (year < MinYear) { return false; }

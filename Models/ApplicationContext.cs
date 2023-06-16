@@ -8,7 +8,6 @@ namespace RandaManga.Models
         public DbSet<Manga> MangaCatalog { get; set; } = null!;
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
         {
-            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

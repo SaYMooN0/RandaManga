@@ -41,7 +41,7 @@
 }
 
 .catalogMangaLabel {
-    margin-bottom:0;
+    margin-bottom:1%;
     height: 2.7vh;
     width: inherit;
     color: aliceblue;
@@ -319,7 +319,7 @@
     }
 
 .mangaTypeLabel {
-    height:1.2vh;
+    height:0.9vh;
     margin-top:3%;
     color: #88495E;
     font-size: 2.0vmin;
@@ -328,7 +328,25 @@
     font-weight: 500;
     text-align: left;
 }
-
+.mangaStatusContainer {
+    width:95%;
+    margin-left:4%;
+    margin-top:-8%;
+    height:12%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 5fr 1.5fr 2fr 5fr 1.5fr;
+    align-items: center;
+}
+.mangaStatusLabel {
+    height: 0.9vh;
+    margin-top:0;
+    color: #88495E;
+    font-size: 2.0vmin;
+    text-align: left;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+}
 .FormButtonsContainer {
     background-color: blanchedalmond;
     margin-top: 20%;
