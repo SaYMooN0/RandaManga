@@ -41,6 +41,14 @@
       "PackagePath": "staticwebassets\\images\\mangaCovers\\Default.png"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\chainsawman.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\chainsawman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\shinseikievangelion.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\shinseikievangelion.jpg"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\souleater.jpg",
       "PackagePath": "staticwebassets\\images\\mangaCovers\\souleater.jpg"
     },

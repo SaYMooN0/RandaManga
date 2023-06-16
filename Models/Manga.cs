@@ -16,7 +16,7 @@ namespace RandaManga.Models
         public string RusLink { get; private set; } = "No_rus link was found";
         public string EngLink { get; private set; } = "No_eng link was found";
         public string ImagePath { get; private set; } = @"/images/mangaCovers/Default.png";
-        public string AgeLimit { get; private set; } = "Default_Age_Limit";
+        public int AgeLimit { get; private set; } = 0;
         public int ReleaseYear { get; private set; } = -1;
         [NotMapped]
         public string[] Tags { get; private set; } = new string[0];
@@ -30,7 +30,7 @@ namespace RandaManga.Models
                 Tags = _tagsString.Split(',');
             }
         }
-        public Manga(string name, string description, MangaType type, MangaStatus status, string TagsString, string RusLink,string EngLink, string imagePath, string author, string AgeLimit, int ReleaseYear)
+        public Manga(string name, string description, MangaType type, MangaStatus status, string TagsString, string RusLink,string EngLink, string imagePath, string author, int AgeLimit, int ReleaseYear)
         {
             Name = name;
             Description = description;
@@ -51,6 +51,10 @@ namespace RandaManga.Models
         {
             string str = $"class: Manga name:{this.Name}  description: {this.Description} type: {this.Type} status: {this.Status} tags[ {this.TagsString} ] rus Link:{this.RusLink} eng Link:{this.EngLink} image path: {this.ImagePath} author: {this.Author} age limit: {this.AgeLimit} release year: {this.ReleaseYear}";
             return str;
+        }
+        public string GetFullImagePath()
+        {
+            return @"/images/mangaCovers/" + this.ImagePath + ".jpg";
         }
     }
     public enum MangaType { Manga, Manhwa, Manhua, Unknown };
