@@ -71,7 +71,7 @@
             <p class="formLabel" style="margin-top:9%">Статус тайтла</p>
             <div class="mangaStatusContainer" >
                 <p class="mangaStatusLabel">Прекращен</p>
-                <input asp-for="@Model.Filters.Ongoing" class="ageRaitingCheckbox" />
+                <input asp-for="@Model.Filters.Suspended" class="ageRaitingCheckbox" />
                 <p></p>
                 <p class="mangaStatusLabel">Анонс</p>
                 <input asp-for="@Model.Filters.Announcement" class="ageRaitingCheckbox" />
@@ -79,7 +79,7 @@
                 <input asp-for="@Model.Filters.Completed" class="ageRaitingCheckbox" />
                 <p></p>
                 <p class="mangaStatusLabel">Онгоинг</p>
-                <input asp-for="@Model.Filters.Suspended" class="ageRaitingCheckbox" />
+                <input asp-for="@Model.Filters.Ongoing" class="ageRaitingCheckbox" />
             </div>
             <div class="FormButtonsContainer">
                 <button class="filterFormButtons" type="reset">

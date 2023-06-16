@@ -44,6 +44,20 @@
                 return true;
             return false;
         }
+        public bool CheckByStatus(MangaStatus status) {
+            if (!Ongoing && !Announcement && !Completed &&!Suspended)
+                return true;
+            if (status == MangaStatus.Ongoing && Ongoing)
+                return true;
+            if (status == MangaStatus.Announcement && Announcement)
+                return true;
+            if (status == MangaStatus.Completed && Completed)
+                return true;
+            if (status == MangaStatus.Suspended && Suspended)
+                return true;
+            return false;
+
+        }
 
 
     }
