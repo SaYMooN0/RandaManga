@@ -2,8 +2,8 @@
 {
     public class Filters
     {
-        public int MinYear { get; set; } = 1970;
-        public int MaxYear { get; set; } = 2023;
+        public int MinYear { get; set; }
+        public int MaxYear { get; set; }
         public bool AgeRating18 { get; set; }
         public bool AgeRating16 { get; set; }
         public bool AgeRatingAbsent { get; set; }

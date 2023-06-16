@@ -52,10 +52,10 @@
             <p class="formLabel">Год выпуска</p>
             <div class="yearRangeInput">
                 <p class="auxiliaryText">от</p>
-                <input type="text" class="yearInputField" name="MinYear" value="@Model.Filters.MinYear" />
+                <input type="text" class="yearInputField" asp-for="@Model.Filters.MinYear" />
                 <p></p>
                 <p class="auxiliaryText">до</p>
-                <input type="text" class="yearInputField" name="MaxYear" value="@Model.Filters.MaxYear" />
+                <input type="text" class="yearInputField"  asp-for="@Model.Filters.MaxYear" />
             </div>
             <p class="formLabel">Возрастной рейтинг</p>
             <div class="ageRaitingContainer">
