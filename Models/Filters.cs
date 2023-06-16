@@ -8,6 +8,9 @@
         public bool AgeRating18 { get; set; }
         public bool AgeRating16 { get; set; }
         public bool AgeRatingAbsent { get; set; }
+        public bool Manga { get; set; }
+        public bool Manhwa { get; set; }
+        public bool Manhua { get; set; }
         public bool CheckByReleaseYear(int year)
         {
             if (year < MinYear) { return false; }

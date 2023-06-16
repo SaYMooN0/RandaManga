@@ -237,13 +237,13 @@
 }
 
 .formLabel {
-    margin-top:8%;
-    margin-left: 2%;
-    width: 98%;
-    font-size: 2.3vmin;
-    color: #88495E;
+    margin-top: 8%;
+    margin-left: 4%;
+    width: 92%;
+    font-size: 2.4vmin;
+    color: #503345;
     font-family: 'Segoe UI';
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .yearRangeInput {
@@ -277,24 +277,55 @@
     font-weight: 500;
     text-align: center;
 }
+
 .ageRaitingContainer {
     margin-top: -10%;
     height: 4%;
     width: 96%;
     display: grid;
-    grid-template-columns: 33% 11% 17% 11% 17% 11%;
+    grid-template-columns: 36% 11% 16% 11% 16% 11%;
     align-items: center;
 }
-.ageRaitingCheckbox{
-    height:45%;
+
+.ageRaitingCheckbox {
+    height: 45%;
 }
+
 .ageRaitingLabel {
     color: #88495E;
-    font-size: 1.6vmin;
+    font-size: 1.64vmin;
     text-align: right;
     font-family: 'Segoe UI';
     font-weight: 500;
 }
+
+.mangaTypeContainer {
+    height:10%;
+    margin-left: 4%;
+    width: 78%;
+    margin-top: -10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+
+    .mangaTypeContainer input {
+        margin-top: 20%;
+        height:60%;
+    }
+
+.mangaTypeLabel {
+    height:1.2vh;
+    margin-top:3%;
+    color: #88495E;
+    font-size: 2.0vmin;
+    text-align: right;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    text-align: left;
+}
+
 .FormButtonsContainer {
     background-color: blanchedalmond;
     margin-top: 20%;

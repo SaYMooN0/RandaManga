@@ -59,6 +59,15 @@
                 <p class="ageRaitingLabel">18+</p>
                 <input asp-for="@Model.Filters.AgeRating18" class="ageRaitingCheckbox" />
             </div>
+            <p class="formLabel">Тип</p>
+            <div class="mangaTypeContainer">
+                <p class="mangaTypeLabel">Манга</p>
+                <input asp-for="@Model.Filters.Manga" class="ageRaitingCheckbox" />
+                <p class="mangaTypeLabel">Манхва</p>
+                <input asp-for="@Model.Filters.Manhwa" class="ageRaitingCheckbox" />
+                <p class="mangaTypeLabel">Маньхуа</p>
+                <input asp-for="@Model.Filters.Manhua" class="ageRaitingCheckbox" />
+            </div>
             <div class="FormButtonsContainer">
                 <button class="filterFormButtons" type="reset">
                     Очистить
