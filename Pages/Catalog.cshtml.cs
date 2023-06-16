@@ -10,8 +10,6 @@ namespace RandaManga.Pages
         public ApplicationContext context;
         internal List<Manga> allMangaList { get; set; } = new();
         internal List<Manga> mangaListToShow { get; set; } = new();
-        internal List<string> allTags { get; set; } = new() { };
-        internal string[] SelectedTags { get; set; } = { };
         public Filters Filters { get; set; } = new();
         public CatalogModel(ApplicationContext db)
         {
@@ -19,8 +17,6 @@ namespace RandaManga.Pages
         }
         public void OnGet()
         {
-            Filters.MinYear = 1970;
-            Filters.MaxYear = 2023;
             fillContent();
             mangaListToShow = allMangaList.ToList();
         }
@@ -30,17 +26,9 @@ namespace RandaManga.Pages
             fillContent();
             FormListToShow();
         }
-        public void OnPostTagApplied(string[] selectedTags)
-        {
-            fillContent();
-            this.SelectedTags = selectedTags;
-            FormListToShow();
-
-        }
         
         public void fillContent()
         {
-
             allMangaList = context.MangaCatalog.AsNoTracking().ToList();
             if (allMangaList.Count < 4)
             {
@@ -51,24 +39,31 @@ namespace RandaManga.Pages
             {
                 foreach (string tag in item.Tags)
                 {
-                    if (!allTags.Contains(tag))
-                        allTags.Add(tag);
+                    if (!Filters.Tags.Keys.Contains(tag))
+                        Filters.Tags.Add(tag, false);
                 }
             }
-            allTags.Sort();
+            
+
         }
         private void FormListToShow()
         {
+            int selectedTagsCount = 0;
+            foreach (var tag in Filters.Tags.Keys)
+            {
+                if (Filters.Tags[tag])
+                    selectedTagsCount++;
+            }
             int coincidences = 0;
             foreach (Manga manga in allMangaList)
             {
                 coincidences = 0;
                 foreach (string t in manga.Tags)
                 {
-                    if (SelectedTags.Contains(t))
+                    if (Filters.Tags[t])
                         coincidences++;
                 }
-                if (coincidences == SelectedTags.Length)
+                if (coincidences == selectedTagsCount)
                     if (Filters.CheckByReleaseYear(manga.ReleaseYear) &&
                         Filters.CheckByAgeRaiting(manga.AgeLimit))
                         mangaListToShow.Add(manga);
