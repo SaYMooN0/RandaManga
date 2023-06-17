@@ -1,4 +1,5 @@
 ﻿@page
+@using RandaManga.Models;
 @model IndexModel
 @{
     ViewData["Title"] = "RandaManga";
@@ -15,13 +16,42 @@
         <span class="infoFirstWord">
             RandaManga
         </span>
-         — это сервис, который поможет вам легко и быстро выбрать интересную мангу, манхву или маньхуа
+        — это сервис, который поможет вам легко и быстро выбрать интересную мангу, манхву или маньхуа
     </p>
 </div>
 <h2 class="expertsRecommendationHeader">Рекомендации экспертов</h2>
 <div class="expertsRecommendationContainer">
-    <a class="expertsRecommendation" asp-page="MangaPage" asp-route-id="@Model.recomendstionRomance.Id">
-        <img class="expertsRecommendationImg" src="@Model.recomendstionRomance.GetFullImagePath()" />
-        <p class="expertsRecommendationLabel">@Model.recomendstionRomance.Name</p>
-    </a>
+    @foreach (Manga m in Model.ExpertsRecomendation)
+    {
+        <a class="expertsRecommendation" asp-page="MangaPage" asp-route-id="@m.Id">
+            <img class="expertsRecommendationImg" src="@m.GetFullImagePath()" />
+            <div>
+                <p class="expertsRecommendationLabel">@m.Name</p>
+                <div class="expertsRecommendationTags">
+                    <p class="tagLabel">Теги:</p>
+                    @{
+                        int maxTagInd = 8;
+                    }
+                    @for (int i = 0; i < m.Tags.Length && i < maxTagInd; i++)
+                    {
+                        @if (@m.Tags[i].Length > 16)
+                        {
+                            maxTagInd++;
+                            continue;
+                        }
+                        <p class="tagInExpertsRecommendation">@m.Tags[i]</p>
+                    }
+                    <p class="tagInExpertsRecommendation">И др</p>
+                </div>
+                @if (m.Description.Length > 700)
+                {
+                    <p class="expertsRecommendationDescription">@m.Description.Substring(0,710) ...</p>
+                }
+                else
+                {
+                    <p class="expertsRecommendationDescription">@m.Description</p>
+                }
+            </div>
+        </a>
+    }
 </div>

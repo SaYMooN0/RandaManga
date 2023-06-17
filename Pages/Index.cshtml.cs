@@ -7,7 +7,7 @@ namespace RandaManga.Pages
 {
     public class IndexModel : PageModel
     {
-        public Manga recomendstionRomance { get; private set; }
+        public List<Manga> ExpertsRecomendation{ get; set; }=new List<Manga>();
         public ApplicationContext context;
         public IndexModel(ApplicationContext db)
         {
@@ -16,7 +16,8 @@ namespace RandaManga.Pages
         public void OnGet()
         {
             List<Manga> allMangaList = context.MangaCatalog.AsNoTracking().ToList();
-            recomendstionRomance = allMangaList.Find(m => m.Name == "ТораДора!");
+            ExpertsRecomendation.Add(allMangaList.Find(m => m.Name == "ТораДора!"));
+            ExpertsRecomendation.Add(allMangaList.Find(m => m.Name == "Берсерк"));
         }
     }
 }
