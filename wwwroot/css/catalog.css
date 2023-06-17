@@ -32,17 +32,16 @@
 
 .catalogImage {
     margin-top: -2px;
-   
     width: inherit;
     object-fit: contain;
     border-bottom: 7px solid #503345;
-    aspect-ratio: 1/1.58;
+    aspect-ratio: 1/1.48;
     object-fit: contain;
 }
 
 .catalogMangaLabel {
     margin-bottom:1%;
-    height: 2.7vh;
+    height: 3vh;
     width: inherit;
     color: aliceblue;
     text-align: center;
@@ -50,7 +49,7 @@
     font-family: 'Segoe UI';
     color: #88495E;
     font-size: 2vmin;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #C6BDB6;
 }
 

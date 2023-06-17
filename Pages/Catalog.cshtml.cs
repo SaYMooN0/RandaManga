@@ -31,7 +31,7 @@ namespace RandaManga.Pages
         public void fillContent()
         {
             allMangaList = context.MangaCatalog.AsNoTracking().ToList();
-            if (allMangaList.Count < 6)
+            if (allMangaList.Count < 10)
             {
                 context.FillDataBase();
                 allMangaList = context.MangaCatalog.AsNoTracking().ToList();

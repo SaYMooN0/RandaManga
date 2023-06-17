@@ -41,6 +41,18 @@
       "PackagePath": "staticwebassets\\images\\mangaCovers\\Default.png"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\berserk.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\berserk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\bleach.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\bleach.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\bungoustraydogs.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\bungoustraydogs.jpg"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\chainsawman.jpg",
       "PackagePath": "staticwebassets\\images\\mangaCovers\\chainsawman.jpg"
     },
@@ -59,6 +71,10 @@
     {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\theirstory.jpg",
       "PackagePath": "staticwebassets\\images\\mangaCovers\\theirstory.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\toradora.jpg",
+      "PackagePath": "staticwebassets\\images\\mangaCovers\\toradora.jpg"
     },
     {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\images\\mangaCovers\\yuukokunomoriarty.jpg",
