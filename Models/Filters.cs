@@ -15,6 +15,16 @@
         public bool Announcement { get; set; }
         public bool Completed { get; set; }
         public bool Suspended { get; set; }
+        public int SelectedTagsCountGet()
+        {
+            int selectedTagsCount = 0;
+            foreach (var tag in Tags.Keys)
+            {
+                if (Tags[tag])
+                    selectedTagsCount++;
+            }
+            return selectedTagsCount;
+        }
         public bool CheckByReleaseYear(int year)
         {
             if (year < MinYear) { return false; }

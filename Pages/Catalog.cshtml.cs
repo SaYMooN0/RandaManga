@@ -7,6 +7,7 @@ namespace RandaManga.Pages
 {
     public class CatalogModel : PageModel
     {
+        
         public ApplicationContext context;
         internal List<Manga> allMangaList { get; set; } = new();
         internal List<Manga> mangaListToShow { get; set; } = new();
@@ -48,13 +49,8 @@ namespace RandaManga.Pages
         }
         private void FormListToShow()
         {
-            int selectedTagsCount = 0;
-            foreach (var tag in Filters.Tags.Keys)
-            {
-                if (Filters.Tags[tag])
-                    selectedTagsCount++;
-            }
-            int coincidences = 0;
+            int selectedTagsCount=Filters.SelectedTagsCountGet();
+            int coincidences;
             foreach (Manga manga in allMangaList)
             {
                 coincidences = 0;
