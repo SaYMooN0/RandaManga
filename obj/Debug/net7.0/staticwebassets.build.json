@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GQ1RAn8zPPcz3p1KpRHjsilrjm9qkA/04RaDaZE96J0=",
+  "Hash": "cKB0+mJmbD/I5TwVxlKDCc/1Yj5s+diBmNyPKJmcqj8=",
   "Source": "RandaManga",
   "BasePath": "_content/RandaManga",
   "Mode": "Default",
@@ -66,23 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\catalog.css"
-    },
-    {
-      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\checkbox.css",
-      "SourceId": "RandaManga",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
-      "BasePath": "_content/RandaManga",
-      "RelativePath": "css/checkbox.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\checkbox.css"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\Index.css",
