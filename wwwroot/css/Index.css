@@ -112,9 +112,13 @@
     text-align: left;
     font-family: 'Segoe UI';
     font-weight: 600;
-    color: #503345;
+    color: #88495E;
     font-size: 4.5vmin;
-
+    text-decoration: none;
+    display:inline-block;
+}
+.expertsRecommendationLabel:hover {
+    color: #503345;
 }
 
 .expertsRecommendationTags {
@@ -139,13 +143,29 @@
     background-color: #b0a49b;
     border: 7px solid #b0a49b;
     border-radius: 0.4vmin;
+    text-decoration: none;
+}
+    .tagInExpertsRecommendation:hover {
+        color: #503345;
+    }
+.moreTagsInExpertsRecommendation {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    color: #88495E;
+    font-size: 2.6vmin;
+    background-color: #b0a49b;
+    border: 7px solid #b0a49b;
+    border-radius: 0.4vmin;
+    text-decoration: none;
 }
 .expertsRecommendationDescription {
     font-family: 'Segoe UI';
     font-weight: 500;
     color: #88495E;
     font-size: 2.23vh;
-    margin-bottom:0;
-    margin-top:1%;
-    background-color:aliceblue;
+    margin-bottom: -10%;
+    margin-top: 1%;
 }
+    .expertsRecommendationDescription:hover {
+        color: #503345;
+    }

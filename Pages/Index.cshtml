@@ -23,10 +23,14 @@
 <div class="expertsRecommendationContainer">
     @foreach (Manga m in Model.ExpertsRecomendation)
     {
-        <a class="expertsRecommendation" asp-page="MangaPage" asp-route-id="@m.Id">
-            <img class="expertsRecommendationImg" src="@m.GetFullImagePath()" />
+        <div class="expertsRecommendation">
+            <a asp-page="MangaPage" asp-route-id="@m.Id">
+                <img class="expertsRecommendationImg" src="@m.GetFullImagePath()" />
+            </a>
             <div>
-                <p class="expertsRecommendationLabel">@m.Name</p>
+                <a asp-page="MangaPage" asp-route-id="@m.Id" style="text-decoration:none">
+                    <p class="expertsRecommendationLabel">@m.Name</p>
+                </a>
                 <div class="expertsRecommendationTags">
                     <p class="tagLabel">Теги:</p>
                     @{
@@ -39,10 +43,14 @@
                             maxTagInd++;
                             continue;
                         }
-                        <p class="tagInExpertsRecommendation">@m.Tags[i]</p>
+
+                        <a asp-page="Catalog" asp-route-tag="@m.Tags[i]" style="text-decoration:none">
+                            <p class="tagInExpertsRecommendation">@m.Tags[i] </p>
+                        </a>
                     }
-                    <p class="tagInExpertsRecommendation">И др</p>
+                    <p class="moreTagsInExpertsRecommendation">И др</p>
                 </div>
+                <a asp-page="MangaPage" asp-route-id="@m.Id" style="text-decoration:none">
                 @if (m.Description.Length > 700)
                 {
                     <p class="expertsRecommendationDescription">@m.Description.Substring(0,710) ...</p>
@@ -51,7 +59,8 @@
                 {
                     <p class="expertsRecommendationDescription">@m.Description</p>
                 }
+                </a>
             </div>
-        </a>
+        </div>
     }
 </div>
