@@ -16,8 +16,16 @@ namespace RandaManga.Pages
         {
             this.context = db;
         }
-        public void OnGet()
+        public void OnGet(string? tag)
         {
+            
+            if (tag != null)
+            {
+                Filters.Tags[tag] = true;
+                FormListToShow();
+                OnPostFiltersApplied(this.Filters);
+                return;
+            }
             fillContent();
             mangaListToShow = allMangaList.ToList();
         }

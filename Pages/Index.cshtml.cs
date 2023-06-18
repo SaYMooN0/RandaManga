@@ -16,6 +16,11 @@ namespace RandaManga.Pages
         public void OnGet()
         {
             List<Manga> allMangaList = context.MangaCatalog.AsNoTracking().ToList();
+            if (allMangaList.Count < 10)
+            {
+                context.FillDataBase();
+                allMangaList = context.MangaCatalog.AsNoTracking().ToList();
+            }
             ExpertsRecomendation.Add(allMangaList.Find(m => m.Name == "ТораДора!"));
             ExpertsRecomendation.Add(allMangaList.Find(m => m.Name == "Берсерк"));
         }
