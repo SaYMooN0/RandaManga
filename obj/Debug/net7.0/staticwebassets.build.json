@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cKB0+mJmbD/I5TwVxlKDCc/1Yj5s+diBmNyPKJmcqj8=",
+  "Hash": "sPm3zgc0YNnklKtPBzgLT/0C/G3EP438NIVk9/H1gHw=",
   "Source": "RandaManga",
   "BasePath": "_content/RandaManga",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\layout.css"
+    },
+    {
+      "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\mangaPage.css",
+      "SourceId": "RandaManga",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\",
+      "BasePath": "_content/RandaManga",
+      "RelativePath": "css/mangaPage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mangaPage.css"
     },
     {
       "Identity": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\site.css",

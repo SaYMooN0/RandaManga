@@ -1,29 +1,10 @@
 ﻿@page "{id}"
 @model RandaManga.Pages.MangaPageModel
 @{
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p> 
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
-    <p>@Model.MangaToShow.Name</p>
+    <div class="mangaCoverContainer">
+        <img class="mangaCoverImg" src="@Model.MangaToShow.GetFullImagePath()">
+    </div>
+    <p class="mangaName">@Model.MangaToShow.Name</p>
+    <div class="mangaInfoContainer">
+    </div>
 }

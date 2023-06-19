@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\mangaPage.css",
+      "PackagePath": "staticwebassets\\css\\mangaPage.css"
+    },
+    {
       "Id": "C:\\Users\\SaYMooNchik\\Desktop\\RandaManga\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

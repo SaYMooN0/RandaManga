@@ -1,0 +1,31 @@
+﻿.mangaCoverContainer {
+    position:absolute;
+    left:7vw;
+    top:13vh;
+    width:16vw;
+    height:45vh;
+    display:flex;
+    align-items:center;
+}
+.mangaCoverImg {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1.4;
+}
+.mangaName {
+    position: absolute;
+    left: 24vw;
+    top: 5vh;
+    color: #503345;
+    font-size: 8.2vmin;
+    font-family: 'Gill Sans Ultra Bold Condensed', fallback, sans-serif;
+    font-weight: 600;
+}
+.mangaInfoContainer {
+    position: absolute;
+    left: 24vw;
+    top: 24vh;
+    width: 68vw;
+    height: 45vh;
+    background-color: ThreeDShadow;
+}
